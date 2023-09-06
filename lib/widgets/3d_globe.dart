@@ -51,8 +51,7 @@ class _PlanetState extends State<Planet> with SingleTickerProviderStateMixin {
     // model from https://free3d.com/3d-model/planet-earth-99065.html
     _earth = Object(
         name: 'earth',
-        scale: Vector3(15.0, 15.0, 15.0),
-        lighting: true,
+        scale: Vector3(10.0, 10.0, 10.0),
         backfaceCulling: false,
         fileName: 'assets/earth.obj');
 
