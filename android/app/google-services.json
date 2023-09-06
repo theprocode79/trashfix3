@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "75753712163",
+    "project_id": "trashfix",
+    "storage_bucket": "trashfix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75753712163:android:df6d365591ced8d953df96",
+        "android_client_info": {
+          "package_name": "com.example.trashfix2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75753712163-uju3et73j87bl0qlslvileevenumh3l3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trashfix2",
+            "certificate_hash": "3fa33f02559669633152233979a16f32c0f2f84a"
+          }
+        },
+        {
+          "client_id": "75753712163-226jnl5eu9fb9evsqm59rhe9johl6ua9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb10xjqqsvFJ8fyv28L_iIRwZCqHj10r4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75753712163-226jnl5eu9fb9evsqm59rhe9johl6ua9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
