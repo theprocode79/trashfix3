@@ -54,6 +54,7 @@ class AuthProvider extends ChangeNotifier {
   //signin
   void signInWithPhone(BuildContext context, String phoneNumber) async {
     try {
+      print(phoneNumber);
       await _firebaseAuth.verifyPhoneNumber(
           phoneNumber: phoneNumber,
           verificationCompleted:

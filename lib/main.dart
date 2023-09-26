@@ -4,7 +4,6 @@ import 'package:trashfix2/providers/details_provider.dart';
 import 'package:trashfix2/providers/store_provider.dart';
 import 'package:trashfix2/screens/welcome_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:trashfix2/widgets/3d_globe.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

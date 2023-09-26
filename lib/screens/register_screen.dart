@@ -60,8 +60,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               TextFormField(
+                keyboardType: TextInputType.phone,
                 style: const TextStyle(
                     fontWeight: FontWeight.bold, fontSize: 18.0),
                 onChanged: ((value) {
@@ -83,22 +86,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: const BorderSide(color: Colors.black12)),
-                  prefixIcon: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      onTap: () {
-                        showCountryPicker(
-                            context: context,
-                            countryListTheme: const CountryListThemeData(
-                                bottomSheetHeight: 550),
-                            onSelect: (value) {
-                              setState(() {
-                                selectedCountry = value;
-                              });
+                  prefixIcon: InkWell(
+                    onTap: () {
+                      showCountryPicker(
+                          context: context,
+                          countryListTheme: const CountryListThemeData(
+                              bottomSheetHeight: 550),
+                          onSelect: (value) {
+                            setState(() {
+                              selectedCountry = value;
                             });
-                      },
+                          });
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
                       child: Text(
                         "${selectedCountry.flagEmoji} +${selectedCountry.phoneCode}",
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                             fontSize: 18,
                             color: Colors.black,
